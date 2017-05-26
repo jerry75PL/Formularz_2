@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz_test</title>
+</head>
+
+<body>
+    <h1>A Simple Form</h1>
+    <p>form fundamentals</p>
+
+    <form method="POST" action="https://formspree.io/jteklak@gmail.com" autocomplete="on">
+        <fieldset>
+            <legend>Customenr info</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" autofocus required><br /><br />
+            <label for="phone">Telephone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Pattern: 1-234-567-8910" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"><br /><br />
+            <label for="email">Email address:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required><br /><br />
+        </fieldset>
+        <fieldset>
+            <legend>Books</legend>
+            <input list="books">
+            <datalist id="books">
+            <option value="Book1">
+            <option value="Book2">
+            <option value="Book3">
+            <option value="Book4">
+            <option value="Book5">
+            </datalist>
+            <label for="quantity">Quantity (Maximum 5):</label>
+            <input type="number" name="quantity" id="quantity" min="1" max="5">
+        </fieldset>
+        <button type="submit">Wyślij</button>
+    </form>
+</body>
+
+</html>
