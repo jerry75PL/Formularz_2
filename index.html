@@ -4,25 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Formularz_test</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <h1>A Simple Form</h1>
-    <p>form fundamentals</p>
+    <h2>form fundamentals</h2>
 
-    <form method="POST" action="https://formspree.io/jteklak@gmail.com" autocomplete="on">
+    <form id="form2" method="POST" action="https://formspree.io/jteklak@gmail.com" autocomplete="on">
         <fieldset>
-            <legend>Customenr info</legend>
+            <legend>Customer info</legend>
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" autofocus required><br /><br />
+            <input type="text" name="name" id="name" class="w300" placeholder="Enter your name" autofocus required><br /><br />
             <label for="phone">Telephone:</label>
-            <input type="tel" name="phone" id="phone" placeholder="Pattern: 1-234-567-8910" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"><br /><br />
+            <input type="tel" name="phone" id="phone" class="w300" placeholder="Pattern: 1-234-567-8910" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"><br /><br />
             <label for="email">Email address:</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email address" required><br /><br />
+            <input type="email" name="email" id="email" class="w300" placeholder="Enter your email address" required><br /><br />
         </fieldset>
         <fieldset>
             <legend>Books</legend>
-            <input list="books">
+            <input list="books" id="book" class="w300">
             <datalist id="books">
             <option value="Book1">
             <option value="Book2">
@@ -31,8 +32,8 @@
             <option value="Book5">
             </datalist>
             <label for="quantity">Quantity (Maximum 5):</label>
-            <input type="number" name="quantity" id="quantity" min="1" max="5">
-        </fieldset>
+            <input type="number" name="quantity" id="quantity" class="w50" min="1" max="5">
+        </fieldset><br />
         <button type="submit">Wyślij</button>
     </form>
 </body>

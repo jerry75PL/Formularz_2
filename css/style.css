@@ -1,0 +1,26 @@
+h1 {
+    color: darkblue;
+    margin: 0 auto;
+}
+
+h2 {
+    color:blue;
+    font-style: italic;
+    margin: 0 auto;
+}
+
+#form2 {
+    width: 50%;
+}
+
+#form2 fieldset {
+    padding-left: 30px;
+}
+
+.w300 {
+    width: 300px;
+}
+
+.w50 {
+    width: 50px;
+}
